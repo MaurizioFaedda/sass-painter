@@ -11,3 +11,27 @@
   margin: 0 auto;
 }
 
+nav {
+  height: 100px;
+  background-color: #101010;
+}
+
+nav .user-nav {
+  height: 45px;
+  text-align: right;
+}
+
+nav .user-nav ul {
+  list-style-type: none;
+}
+
+nav .user-nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav .user-nav ul li a {
+  color: #989898;
+  font-size: 12.8px;
+}
+

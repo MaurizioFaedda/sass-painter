@@ -1,0 +1,22 @@
+// user-nav
+nav{
+    height: 100px;
+    background-color: $brand_primary;
+    .user-nav{
+        height: 45px;
+        text-align: right;
+        ul{
+            list-style-type: none;
+            li{
+                display: inline-block;
+                padding: $spacing*0.5;
+                a{
+                    color: $sub_dark;
+                    font-size: $font_size*0.8;
+                }
+            }
+        }
+
+    }
+
+}
