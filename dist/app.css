@@ -14,12 +14,12 @@
 }
 
 nav {
-  height: 100px;
+  height: 98px;
   background-color: #101010;
 }
 
 nav .user-nav {
-  height: 45px;
+  height: 40px;
   text-align: right;
 }
 
@@ -37,12 +37,38 @@ nav .user-nav ul li a {
   color: #989898;
 }
 
+nav .user-nav ul li a:hover {
+  color: #e7e7e7;
+}
+
 nav .user-nav ul li select {
   font-size: 12.8px;
 }
 
 nav .user-nav ul li select option {
   font-size: 12.8px;
+}
+
+nav .menu-nav {
+  height: 58px;
+}
+
+nav .menu-nav .logo-box {
+  margin-right: 24px;
+}
+
+nav .menu-nav ul {
+  list-style-type: none;
+}
+
+nav .menu-nav ul li {
+  display: inline-block;
+  padding: 24px;
+}
+
+nav .menu-nav ul li a {
+  font-size: 14.4px;
+  color: #f1f1f1;
 }
 
 #phone::before {
@@ -79,5 +105,9 @@ nav .user-nav ul li select option {
   color: #009cff;
   font-size: 12.8px;
   padding: 4px;
+}
+
+.logo-box {
+  width: 90px;
 }
 
