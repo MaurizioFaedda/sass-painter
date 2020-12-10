@@ -11,12 +11,32 @@ nav{
                 display: inline-block;
                 padding: $spacing*0.5;
                 a{
-                    color: $sub_dark;
                     font-size: $font_size*0.8;
+                    color: $sub_dark;
+                }
+                select{
+                    font-size: $font_size*0.8;
+                    option{
+                        font-size: $font_size*0.8;
+                    }
+
                 }
             }
         }
 
     }
 
+}
+
+#phone::before{
+    @include fontawesome("\f879", $action_press)
+}
+#chat::before{
+    @include fontawesome("\f27a", $action_press)
+}
+#sign-in::before{
+    @include fontawesome("\f007", $action_press)
+}
+#cart::before{
+    @include fontawesome("\f07a", $action_press)
 }

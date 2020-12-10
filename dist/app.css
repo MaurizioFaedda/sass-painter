@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +33,51 @@ nav .user-nav ul li {
 }
 
 nav .user-nav ul li a {
-  color: #989898;
   font-size: 12.8px;
+  color: #989898;
+}
+
+nav .user-nav ul li select {
+  font-size: 12.8px;
+}
+
+nav .user-nav ul li select option {
+  font-size: 12.8px;
+}
+
+#phone::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F879";
+  color: #009cff;
+  font-size: 12.8px;
+  padding: 4px;
+}
+
+#chat::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F27A";
+  color: #009cff;
+  font-size: 12.8px;
+  padding: 4px;
+}
+
+#sign-in::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F007";
+  color: #009cff;
+  font-size: 12.8px;
+  padding: 4px;
+}
+
+#cart::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F07A";
+  color: #009cff;
+  font-size: 12.8px;
+  padding: 4px;
 }
 
