@@ -9,72 +9,106 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="dist/app.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="container">
-                    <div class="row">
-                        <div class="general-nav w-100">
-                        <div class="user-nav col-md-6 offset-md-6">
-                            <ul>
-                                <li id="phone">
-                                    <a href="#">1-877-582-6735</a>
-                                </li>
-                                <li id="chat">
-                                    <a href="#">Chat</a>
-                                </li>
-                                <li id="sign-in">
-                                    <a href="#">Sign in</a>
-                                </li>
-                                <li id="cart">
-                                    <a href="#">Cart</a>
-                                </li>
-                                <li>
-                                    <select class="lenguage" name="">
-                                        <option value="">English</option>
-                                        <option value="">Deutsch</option>
-                                        <option value="">Francais</option>
-                                    </select>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="menu-nav d-flex">
-                            <div class="logo-box pt-3">
-                                <img class="w-100 " src="https://www.painterartist.com/static/ptr/images/logo_painter.png" alt="">
+        <div id="root">
+            <header>
+                <nav>
+                    <div class="container">
+                        <div class="row">
+                            <div class="general-nav w-100">
+                                <div class="user-nav col-md-6 offset-md-6">
+                                    <ul>
+                                        <li id="phone">
+                                            <a href="#">1-877-582-6735</a>
+                                        </li>
+                                        <li id="chat">
+                                            <a href="#">Chat</a>
+                                        </li>
+                                        <li id="sign-in">
+                                            <a href="#">Sign in</a>
+                                        </li>
+                                        <li id="cart">
+                                            <a href="#">Cart</a>
+                                        </li>
+                                        <li>
+                                            <select class="lenguage" name="">
+                                                <option value="">English</option>
+                                                <option value="">Deutsch</option>
+                                                <option value="">Francais</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-nav d-flex">
+                                    <div class="logo-box pt-3">
+                                        <img class="w-100 " src="https://www.painterartist.com/static/ptr/images/logo_painter.png" alt="">
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Brushes</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Wacom Tablets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Spacial Offers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Free Trials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Business</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Learning</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
-                            <ul>
-                                <li>
-                                    <a href="#">Products</a>
-                                </li>
-                                <li>
-                                    <a href="#">Brushes</a>
-                                </li>
-                                <li>
-                                    <a href="#">Wacom Tablets</a>
-                                </li>
-                                <li>
-                                    <a href="#">Spacial Offers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Free Trials</a>
-                                </li>
-                                <li>
-                                    <a href="#">Business</a>
-                                </li>
-                                <li>
-                                    <a href="#">Support</a>
-                                </li>
-                                <li>
-                                    <a href="#">Learning</a>
-                                </li>
-                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <div id="section-download">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="h-100 col-md-5 offset-md-3">
+
+                            </div>
+                            <div class="h-100 col-md-4"></div>
                         </div>
 
                     </div>
-                    </div>
+
                 </div>
-            </nav>
-        </header>
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div v-for="(ul, name) in footer_menu" class="col-md-3">
+                            <ul>
+                                <span>{{name}}</span>
+                                <li v-for="li in ul">
+                                    <a :href="li.link">{{li.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+        <script src="dist/app.js" charset="utf-8"></script>
     </body>
 </html>

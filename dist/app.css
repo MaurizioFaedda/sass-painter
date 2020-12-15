@@ -111,3 +111,33 @@ nav .menu-nav ul li a {
   width: 90px;
 }
 
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  padding: 10px, 0;
+}
+
+footer ul li a {
+  font-size: 12.8px;
+  color: #989898;
+}
+
+footer ul li a:hover {
+  color: #101010;
+}
+
+section #section-download {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+  height: 464px;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+section .container {
+  width: 100%;
+}
+

@@ -1,0 +1,16 @@
+footer{
+
+    ul{
+        list-style-type: none;
+        li{
+            padding: $spacing*0.5, 0;
+            a{
+                font-size: $font_size*0.8;
+                color: $sub_dark;
+                &:hover{
+                    color: $brand_primary;
+                }
+            }
+        }
+    }
+}
